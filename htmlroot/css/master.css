@@ -1,0 +1,212 @@
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.content {
+  padding-top: 19.4vh;
+}
+
+
+header {
+  background: rgb(255, 255, 255);
+  border-bottom: 5px solid rgb(70, 130, 180);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-family: Poppins;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav.nav2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    height: 20%;
+  }
+  nav.nav2 ul {
+    background-color: white;
+    padding: 5px;
+    align-content: left;
+  }
+  
+  .logo {
+    grid-column: 2 / 3;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  nav {
+     all: unset; /* this causes issues with Edge, since it's unsupported */
+    
+    /*Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+    
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+    animation-delay: 0.5s;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+}
+
+
+@media (width: 800px) {
+    nav.nav2 {
+      display: none;
+    }
+}
+@media (max-width:800px) {
+  nav.nav2 {
+    display: block;
+  }
+}
+/*Title, subtitle styling
+End of nav styling
+*/
+
+  h1.title {
+    font-family: "Poppins";
+    text-align: center;
+    padding: 5px;
+  }
+  h2.title {
+    font-family: "Poppins";
+    text-align: center;
+  }  
+  h3.subtitle {
+    font-family: "Poppins";
+    text-align: center;
+    padding: 2px;
+  }
+  
+
+
+
+
+div.content section {
+  background-color: rgb(94, 188, 219);
+
+  border-radius: 10px; 
+}
+
+.sectiontext {
+  font-family: Poppins;
+  padding: 0 15px;
+}
+
+
+body {
+  background-color: rgb(190, 229, 241);
+}
+
+.quote_big {
+  padding: 20px;
+  background-color: rgb(40, 181, 228)
+}
+
+.quote_big::before {
+  content: '"';
+  font-size: 50px;
+}
+.quote_big::after {
+  content: '"';
+  font-size: 50px;
+}

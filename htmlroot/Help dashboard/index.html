@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Help Dashboard | KCT</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container" class="font-family-poppins">
+        <div id="text">Text</div>
+        <div id="option-buttons" class="btn-grid">
+          <button class="btn font-family-montserrat">Option 1</button>
+          <button class="btn font-family-montserrat">Option 2</button>
+          <button class="btn font-family-montserrat">Option 3</button>
+          <button class="btn font-family-montserrat">Option 4</button> <!--! These are placeholder buttons for alerts, don't touch them!-->
+        </div>
+      </div>
+    </div>
+
+      <div>
+        <h3 class="font-family-poppins" style="color: white;">FAQ</h3>
+        
+        <p class="tooltip font-family-lato">Quality?
+            <span class="tooltiptext">
+                Our products are just as good, if not better, than most other companies similar to ours. Just because we're kids doesn't mean we make bad stuff!
+            </span>
+        </p>
+        <p class="font-family-lato tooltip">How?
+            <span class="tooltiptext">
+                By downloading or printing or sharing our products!
+            </span>
+        </p>
+        <p class="tooltip font-family-lato">Where?
+            <span class="tooltiptext">
+                In the classroom, of course! Or your own home.
+            </span>
+        </p>
+        <div class="tooltip font-family-lato">Why?
+            <span class="tooltiptext">
+                    <em>Trust</em>. Kids like that other kids created the very thing that they're using.
+            </span>
+        </div>
+    </div>
+
+    <!--Search time!-->
+    <div class="search-container">
+        <div class="search">
+            <input type="text" id="searchInput" onkeyup="search()" placeholder="Search for links.." title="Type in a link keyword">
+
+            <ul id="links" class="font-family-lato">
+            <li><a href="https://tawk.to/chat/5eb1aaaa81d25c0e584910ec/default" target="_self">Message Us</a></li>
+            <li><a href="http://kidcreatorsteam.com/teachers/teachers-main.html" target="_blank">Teacher Library</a></li>
+            <li><a href="https://scratch.mit.edu/projects/382911655" target="_blank">KCT InfoX Bug Reports</a></li>
+            <li><a href="https://forms.gle/Lz6g8ytB6sVirJmJ6" target="_blank">KCT Website Bug Reports</a></li>
+            <li><a href="https://forms.gle/cM1pg7rjUbCZFybUA" target="_blank">Work with us</a></li>
+            <li><a href="/contact.html" target="_self">Contact us emails</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        div.search {
+            height: 50px;
+            margin: 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li {
+            list-style-type: none;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        input#searchInput {
+            border-radius: 20px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <script>
+    function search() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("links");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+    <script src="app.js"></script> <!--Script for selection functionality. Don't touch!-->
+
+    <!--Start of Tawk.to Script-->
+    <!--For tawk.to-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5eb1aaaa81d25c0e584910ec/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
