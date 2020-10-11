@@ -1,0 +1,122 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Selection color*/
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #20b2df;
+}
+  
+::selection {
+    color: white;
+    background: #20b2df;
+}
+
+
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+/*Navigation Bar*/
+nav {
+    position: sticky;
+    top: 0;
+}
+.menu {
+    background: #3FAED1;
+    text-align: center;
+}
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu ul li {
+    width: 120px;
+    margin: 1;
+    padding: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.menu-active, .menu ul li:hover {
+    background: #4bcbf1;
+    border-radius: 3px;
+}
+/*Sub-Menu*/
+.menu-sub-menu-1 {
+    display: none;
+}
+.menu ul li:hover .menu-sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #3FAED1;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menu ul li:hover .menu-sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .menu-sub-menu-1 ul li {
+    width: 150x;
+    padding: 10px;
+}
+
+/*Footer*/
+/*Thank you so much to W3Schools for teaching us how to keep the footer at the bottom of the page!*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4bd0f8;
+    color: white;
+    padding: 5x;
+    text-align: center;
+}
+footer a {
+    color: white;
+    padding-right: 5px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer .footer-links-1, footer .footer-links-2 {
+    padding-bottom: 10px;
+}
+.footer-container {
+    padding: 10px;
+}
+
+/*Text styles*/
+body {
+    font-family: "Montserrat";
+}
+.menu {
+    font-family: "Poppins";
+}
+footer {
+    font-family: "Open Sans";
+}
+h1.header {
+    padding: 10px;
+    text-align: center;
+}
+a {
+    color: initial;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+
