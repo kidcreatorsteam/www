@@ -2,9 +2,6 @@
 # Welcome to the KidCreatorsTeam website's GitHub repository!
 
 ![Website](https://img.shields.io/website?down_message=offline&style=for-the-badge&up_color=blue&up_message=online&url=http%3A%2F%2Fkidcreatorsteam.com%2F)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
-<!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
 # About
 Welcome to GitHub! GitHub is a version control system and helps KCT run. Here is a repository, which is a group of files making up something - like KidCreatorsTeam's website! Without this repository, KCT wouldn't run.
