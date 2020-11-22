@@ -16,7 +16,7 @@ To become a member, check out [this page](http://kidcreatorsteam.com/community/j
 
 Great question!
 
-Help us **stop out bugs** and **get ideas** by contributing through the [issues tab](https://github.com/kidcreatorsteam/www/issues)! It's a really nice way to help us out. If you ever happen to find a bug or have an idea for a feature on KCT, create a new issue. Our team will try and stomp out any bugs you reported, and/or implement ideas you give us. If you help us, the [Our Team](http://kidcreatorsteam.com/our-team.html) page of our website will include you on it!
+Help us **stop out bugs** and **get ideas** by contributing through the [issues tab](https://github.com/kidcreatorsteam/www/issues)! It's a really nice way to help us out. If you ever happen to find a bug or have an idea for a feature on KCT, create a new issue. Our team will try and stomp out any bugs you reported, and/or implement ideas you give us. If you help us, you'll appear below!
 
 ## Contributors ✨
 
