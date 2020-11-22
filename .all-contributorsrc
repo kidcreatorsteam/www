@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Cool-Scratcher",
+      "name": "CoolScratcher",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/65724251?v=4",
+      "profile": "http://kidcreatorsteam.com",
+      "contributions": [
+        "business"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "www",
+  "projectOwner": "kidcreatorsteam",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
