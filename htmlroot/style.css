@@ -6,6 +6,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html,body {
+    height: 100%;
+}
 
 /*Selection color*/
 ::-moz-selection { /* Code for Firefox */
@@ -72,12 +75,11 @@ nav {
 }
 
 /*Footer*/
-/*Thank you so much to W3Schools for teaching us how to keep the footer at the bottom of the page!*/
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    margin-top: -180px;
+    height: 180px;
+    clear: both;
     background-color: #4bd0f8;
     color: white;
     padding: 5x;
@@ -96,6 +98,13 @@ footer .footer-links-1, footer .footer-links-2 {
 }
 .footer-container {
     padding: 10px;
+}
+.main {
+    overflow: auto;
+    padding-bottom: 180px;
+}
+.wrap {
+    min-height: 100%;
 }
 
 /*Text styles*/
